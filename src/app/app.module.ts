@@ -17,8 +17,9 @@ import { NothingComponent } from './nothing/nothing.component';
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'users', component: UsersComponent},
+  {path: 'users/:id/:name', component: UserComponent},
   {path: 'servers', component: ServersComponent},
-  {path: 'nothing', component: NothingComponent}
+  {path: 'nothing', component: NothingComponent},
 ];
 
 @NgModule({
@@ -30,7 +31,7 @@ const appRoutes: Routes = [
     UserComponent,
     EditServerComponent,
     ServerComponent,
-    NothingComponent
+    NothingComponent,
   ],
   imports: [
     BrowserModule,
